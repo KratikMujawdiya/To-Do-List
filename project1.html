@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do-List</title>
+    <!-- fontawesome is a library of icons -->
+    <!-- Ab hum fontawesome ka support lane ke liye uski external css file ko apne web page me add karte hai -->
+    
+        <link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+			integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="project1 .css"/>
+</head>
+<body>
+    <div class="container">
+
+        <!-- head section -->
+        <header>
+            <h1 class="heading">Todo List</h1>
+            <!-- iske bad input box ke liye form ka use karenge kyoki type karne par mera code koi "action" le -->
+            <form class="search">
+                <input type="text" name="search" placeholder="Search your added todos">
+            </form>
+        </header>
+
+        <!-- List section -->
+        <ul class="todos">
+           <li><span>Read a book</span> <i class="far fa-trash-alt delete"></i></li>
+            <!--far fa-trash-alt fontawesome ki class hai jisko humne yha alot kiya hai-->
+            <li><span>Take online class</span> <i class="far fa-trash-alt delete"></i></li>
+            <li><span>Listen to music</span> <i class="far fa-trash-alt delete"></i></li>
+        </ul>
+
+        <!-- footer_section -->
+        <!-- form isliye use kar rhe hai taki javascript me easily element tak phuch jaye -->
+        <form class="add" name="addfrm">
+            <label>Add a new todo...</label>
+            <input type="text" name="add" placeholder="Type something to add">
+        </form>
+    </div> 
+
+    <script src="project1.js"></script>
+</body>
+</html>

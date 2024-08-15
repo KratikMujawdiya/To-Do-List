@@ -1,0 +1,91 @@
+*{
+    padding:0;
+    margin: 0;
+    /* isse unnecessary margin and padding humare project me include na ho */
+}
+body{
+    background-image:linear-gradient(to right bottom,#526c8e,#808ca9,#acaec4,#d4d3e0,#fbfafd);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container{
+    max-width: 400px;
+    padding: 20px;
+    border: 5px solid whitesmoke;
+    border-radius: 10px;
+    margin: auto;
+    max-height: auto;
+    position: relative;
+    top: 50px;
+    background-image:linear-gradient(to top,lightgrey 0%,lightgrey 1%,#e0e0e0 26%,#efefef 48%,#d9d9d9 75%,#bcbcbc 100%);
+    
+    box-shadow: 20px -25px 20px -20px rgba(0,0,0,0.45),
+                25px 0px 20px -20px rgba(0,0,0,0.45),
+                0px 25px 20px -20px rgba(0,0,0,0.45),
+               -25px 20px 20px -20px rgba(0,0,0,0.45);/*1.x-axis 2.y-axis 3. bluriness, 4.size 5.color*/
+     
+    /* pahli value 20px left se right ki taraf shadow show karega */
+
+    /* jitna shadow positive rakhenge utna box ke andar jayegi */
+    /* jitna shadow negative rakhenge utna box ke bahar jayegi */
+
+    /* jitna negative karenge utna y-axis se shadow uper jayegi */
+    /* jitna positive karenge utna y-axis  se shadow niche jayegi */
+
+    /* Agli 2 value size and bluriness ko control karegi */
+
+    /* jitna positive denge utni hi bluriness badegi */
+    /* jitna negative denge utni hi bluriness ghategi*/
+
+}
+.heading{
+    text-align: center;
+    margin-bottom: 30px;
+}
+/* inputbox ko style karne ke liye input selector create kiya */
+/* Aur me chahunga ki jo styling me inputbox par kar rha hai vo tab bhi aaye input par focus ho aur focus na ho 
+iske ke liye hum psuedo classes ka ue karenge*/
+input,input:focus{
+   /* first vala inout,input selector create karne ke liye use kiya and second input par psuedo class apply ki hai  */
+   background: rgba(0,0,0,0.2);
+   padding: 15px;
+   width: 100%;
+   font-size: 18px;
+   border-radius: 4px;/*2px*/
+   outline: none;/*raised up border jo ki unnecessary input ke sath aate hai unko remove karta hai*/
+   border: none;
+}
+::placeholder {
+    color:#526c8e
+}
+.todos{
+    margin-top: 30px;
+}
+.todos li{
+    width: 95%;
+    padding:10px;
+    background-color:black;
+    font-size: 1.2em;
+    color: white;
+    border-radius: 5px;
+    border-bottom: 2px solid white;
+    display: flex;
+    justify-content: space-between;
+}
+/* lable is a inline element  */
+label{
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+.filtered{
+    display: none !important;
+    /* display ko none karne se vo element humare page se hat jata  hai */
+    /* use !important kyoki hum ye chahte hai ki jo bydefualt list ka behavior hai vo apne behavior ke hisab se purane behavior ko cancel kar de */
+
+    /* important keyword ye control karta hai ki jo pehle se settings hai un settings ko hum overwrite kar paye kyoki kuch settings esi hoti hai webpage ke andar jinhe overwrite karna direct possible nhi hota hai to hum imported keyword se un settings ko oerwrite karte hai */
+}
